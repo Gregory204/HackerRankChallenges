@@ -1,0 +1,29 @@
+#include <iostream>
+#include <vector>
+/*
+Vector is used to store and manipulate an array of integers.
+It is a dynamic array conatiner.
+*/
+using namespace std;
+
+// Define the simpleArraySum function
+int simpleArraySum(vector<int> ar) {
+    int sum = 0;
+    for (int i = 0; i < ar.size(); i++) {
+        sum += ar[i];
+    }
+    return sum;
+}
+
+int main() {
+    // Create an array of integers (you can modify this array as needed)
+    vector<int> myArray = {1, 2, 3, 4, 5};
+
+    // Call the simpleArraySum function and store the result in a variable
+    int totalSum = simpleArraySum(myArray);
+
+    // Display the computed sum
+    cout << "The sum of the array is: " << totalSum << endl;
+
+    return 0;
+}
